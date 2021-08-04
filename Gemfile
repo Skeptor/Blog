@@ -18,15 +18,17 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 
+gem 'rexml', '~> 3.2', '>= 3.2.4'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  
   # Test suite
   gem 'factory_bot_rails'
-  gem 'rspec-rails', '~>5.0.1'
+  gem 'rspec-rails', '~> 5.0.0'
 
 end
 
